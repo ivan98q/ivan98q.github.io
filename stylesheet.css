@@ -1,0 +1,23 @@
+.left {
+    float:left;
+    display:block;
+    width:24%;
+}
+.middle {
+    float:left;
+    display:block;
+    width:50%;
+}
+.right {
+    float:left;
+    display:block;
+    width:24%;
+    whitespace:nowrap;
+}
+ul > li {
+    display: inline-block;
+    min-width:75px;
+    zoom:1;
+    *display:inline;
+    /* this fix is needed for IE7- */
+}
