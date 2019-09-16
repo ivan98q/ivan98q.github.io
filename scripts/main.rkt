@@ -27,9 +27,8 @@
      (link ((rel "stylesheet")
             (href "stylesheet.css"))))
     (body
-     ,header
      (div ((class "left")) (p " "))
-     ,xexpr
+     (div ((class "middle")) ,header ,xexpr)
      (div ((class "right"))))))
 
 ;; Defines the XExpr for header for each page
@@ -38,11 +37,12 @@
         (center (h1 "Ivan Quiles-Rodriguez")
         (ul
          (li (a ((href "index.html")) "Home"))
-         (li (a ((href "resume.pdf")) "Resume"))))))
+         (li (a ((href "resume.pdf")) "Resume"))))
+        (hr)))
 
 ;; Home Content
 (define home-content
-  `(div ((class "middle"))
+  `(div ((class "home-page"))
         (p "Hi! 👋🏾, I'm Ivan Quiles-Rodriguez and I'm currently a senior at "
           (a ((href "https://umd.edu/" )) "University of Maryland, College Park")
           " studying Computer Science and Mathematics."

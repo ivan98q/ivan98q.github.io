@@ -1,3 +1,9 @@
+
+* {
+    font-family: "Courier New", Courier, monospace;
+    color:green;
+    background:black;
+}
 .left {
     float:left;
     display:block;
@@ -16,7 +22,7 @@
 }
 ul > li {
     display: inline-block;
-    min-width:75px;
+    min-width:60px;
     zoom:1;
     *display:inline;
     /* this fix is needed for IE7- */
