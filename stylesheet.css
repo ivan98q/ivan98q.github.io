@@ -34,8 +34,7 @@ h1 {
 }
 .menu ul > li {
     display: inline-block;
-    min-width:120px;
-    zoom:1;
+    min-width:100px;
     *display:inline;
     /* this fix is needed for IE7- */
 }
