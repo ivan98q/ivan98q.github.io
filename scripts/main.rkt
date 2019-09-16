@@ -39,13 +39,13 @@
         (ul
          (li (a ((href "index.html")) "Home"))
          (li (a ((href "resume.pdf")) "Resume"))
-         (li (a ((href "https://github.com/ivan98q")) (img ((src "img/GitHub-Mark-Light-32px.png")))))))
+         (li (a ((href "https://github.com/ivan98q")) "Github"))))
         (hr)))
 
 (define footer
   `(div ((class "footer"))
         (hr)
-        (p "Built with a Racket script and some CSS.")))
+        (p "Built with a " (a ((href "https://racket-lang.org/")) "Racket") " script and some CSS.")))
 
 ;; Home Content
 (define home-content
