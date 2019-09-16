@@ -4,7 +4,6 @@
     color:#FFFFFF;
     background:#2c2f33;
     line-height:1.6;
-    font-size:18px;
 }
 h1 {
     font-size:36px;
@@ -14,10 +13,14 @@ h1 {
     display:block;
     width:24%;
 }
+.menu {
+    font-size:32px;
+}
 .middle {
     float:left;
     display:block;
     width:50%;
+    font-size:18px;
 }
 .right {
     float:left;
@@ -25,9 +28,13 @@ h1 {
     width:24%;
     whitespace:nowrap;
 }
-ul > li {
+.footer {
+    font-size:8px;
+    text-align:right;
+}
+.menu ul > li {
     display: inline-block;
-    min-width:60px;
+    min-width:120px;
     zoom:1;
     *display:inline;
     /* this fix is needed for IE7- */

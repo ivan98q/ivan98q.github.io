@@ -29,7 +29,7 @@
             (href "stylesheet.css"))))
     (body
      (div ((class "left")) (p " "))
-     (div ((class "middle")) ,header ,xexpr)
+     (div ((class "middle")) ,header ,xexpr ,footer)
      (div ((class "right"))))))
 
 ;; Defines the XExpr for header for each page
@@ -38,28 +38,34 @@
         (center (h1 "Ivan Quiles-Rodriguez")
         (ul
          (li (a ((href "index.html")) "Home"))
-         (li (a ((href "resume.pdf")) "Resume"))))
+         (li (a ((href "resume.pdf")) "Resume"))
+         (li (a ((href "https://github.com/ivan98q")) (img ((src "img/GitHub-Mark-Light-32px.png")))))))
         (hr)))
+
+(define footer
+  `(div ((class "footer"))
+        (hr)
+        (p "Built with a Racket script and some CSS.")))
 
 ;; Home Content
 (define home-content
   `(div ((class "home-page"))
-        (p "Hi! 👋🏾, I'm Ivan Quiles-Rodriguez and I'm currently a senior at "
+        (p "Hi! 👋🏾, I'm Ivan Quiles-Rodriguez and I'm currently a senior at the "
           (a ((href "https://umd.edu/" )) "University of Maryland, College Park")
           " studying Computer Science and Mathematics."
           " Very recently, I have started working on the Checked C project at "
-          (a ((href "https://www.cs.umd.edu/projects/PL/")) "PLUM!")
+          (a ((href "https://www.cs.umd.edu/projects/PL/")) "PLUM") "!"
           " At my University I am currently a Teaching Assistant for the "
           (a ((href "https://www.cs.umd.edu/class/fall2019/cmsc430/"))
              "Introduction to Compilers")
           " course and I was previously a teaching assistant for: ")
        (ul
         (li (a ((href "https://www.cs.umd.edu/class/spring2019/cmsc216/"))
-               "CMSC216: Introduction to Computer Systems"))
+               "CMSC216: Introduction to Computer Systems, Spring 2019"))
         (li (a ((href "https://www.cs.umd.edu/class/fall2018/cmsc132/"))
-               "CMSC132: Object Oriented Programming II"))
+               "CMSC132: Object Oriented Programming II, Fall 2018"))
         (li (a ((href "https://www.cs.umd.edu/class/spring2018/cmsc216/"))
-               "CMSC216: Introduction to Computer Systems")))
+               "CMSC216: Introduction to Computer Systems, Spring 2018")))
        (p "Outside of school I have interned at "
           (a ((href "https://about.twitter.com/")) "Twitter")
           " where I worked on "
