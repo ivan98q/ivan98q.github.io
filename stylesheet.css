@@ -1,8 +1,13 @@
 
 * {
     font-family: "Courier New", Courier, monospace;
-    color:green;
-    background:black;
+    color:#FFFFFF;
+    background:#2c2f33;
+    line-height:1.6;
+    font-size:18px;
+}
+h1 {
+    font-size:36px;
 }
 .left {
     float:left;
