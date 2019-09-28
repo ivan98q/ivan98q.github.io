@@ -75,8 +75,7 @@
           (a ((href "https://www.microsoft.com/en-us/")) "Microsoft")
           " where I worked on the Cortana Core team and prototyped"
           " a feature for deeper integrations between Third Party Skills"
-          " built in Bot Framework and first-party Cortana Skills.")
-       (p "Note: This page is still under construction!")))
+          " built in Bot Framework and first-party Cortana Skills.")))
 
 ; Script where pages are actually created
 (write-page (make-page home-content "Home") "index")
